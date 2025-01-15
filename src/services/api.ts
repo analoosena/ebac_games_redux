@@ -3,7 +3,7 @@ import { Game } from '../App'
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:4000/produtos'
+    baseUrl: 'http://localhost:4000'
   }),
   endpoints: (builders) => ({
     getJogos: builders.query<Game[], void>({
